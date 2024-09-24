@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Noto+Sans:wght@300;400;500;600;700&display=swap');
+@import './reset.css';
+@import './common.css';
+
+.header {}
+.header .inner{
+    display: flex;
+    align-items: center;
+    height: 66px;
+}
+.header .logo{}
+.header .logo a{
+    display: block;
+    width: 122px;
+    height: 31px;
+    background: url("https://simg.wooribank.com/img/intro/header/h1_01.png") no-repeat;
+}
+.header .auth-list {
+    /* 높이 100%을 줘야 sub-menu로 커서를 옮겨도 hover가 풀리지 않는다. */
+    height: 100%;   
+    display: flex;
+    gap: 5px;
+    margin-left: 18px;
+    font-size: 14px;
+}
+.header .auth-list .btn-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 30px;
+    color: #fff;
+    background: url("https://simg.wooribank.com/img/common/etc/bg_btn/gnb_member_re1121.png") no-repeat center / 100%;
+    padding-left: 15px
+}
+.header .auth-list .btn-auth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 97px;
+    height: 30px;
+    color: #000;
+    background: url("https://simg.wooribank.com/img/common/etc/bg_btn/gnb_cert_re1203.png") no-repeat center / 100%;
+    padding-left: 15px;
+    font-weight: bold;
+}
+/* sub-list */
+.header .auth-list .auth-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.header .auth-list .auth-item.on > .sub-list {
+    display: block;
+}
+.header .auth-list .auth-item .sub-list {
+    display: none;
+    /* padding: 5px 15px; */
+    font-size: 13px;
+    position: absolute;
+    top: 85%;
+    left: -10px;
+    z-index: 5;
+    width: 113px;
+    height: 37px;
+    border: 1px solid #666;
+    border-radius: 5px;
+    background: url('https://simg.wooribank.com/img/common/etc/bg_btn/intro_login_Indivual_bg.png') no-repeat center;
+    box-shadow: 2px 2px 5px -4px rgba(0,0,0,0.6);    
+}
+.header .auth-list .sub-item {
+    height: 100%;
+    width: 50%;
+}
+.header .auth-list .sub-item>a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+} 
+.header .auth-list .sub-item.left {
+    float: left;
+}
+.header .auth-list .sub-item.right {
+    float: right;
+}
+
+
+.header .gnb {
+    margin-left: 30px;
+}
+.header .gnb .gnb-list {
+    display: flex;
+    gap: 21px;
+}
+.header .gnb .gnb-item {
+    position: relative;
+    font-size: 15px;
+    font-weight: bold;
+}
+.header .gnb .gnb-item > .sub-list {
+    display: none;
+}
+.header .gnb .gnb-item.on > .sub-list {
+    width: 155px;
+    display: block;
+    position: absolute;
+    left: -25px;
+    right: 0;
+    top: 35px;
+    z-index: 5;
+    background: url('https://simg.wooribank.com/img/common/etc/bg_menu_border.png') no-repeat;
+    border: 1px solid #000;
+    background: #fff;
+    padding: 15px 20px;
+}
+.header .gnb .gnb-item .sub-list .sub-item > a {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+.header .gnb .gnb-item .sub-list .sub-item.bold > a {
+    color: #000;
+}
+.header .gnb .gnb-item .sub-list .sub-item.bold {
+    font-size: 16px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 15px;
+}
+.header .gnb .gnb-item .sub-list .sub-item {
+    font-size: 12px;
+}
+.header .gnb .gnb-item span.arrow {
+    display: none;
+}
+.header .gnb .gnb-item.on span.arrow {
+    z-index: 6;
+    display: block;
+    position: absolute;
+    left: -27px;
+    width: 105px;
+    height: 20px;
+    background: url('https://simg.wooribank.com/img/main/arrow.png') no-repeat center;
+}
+
+/* UTIL AREA */
+.header .util-area {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-right: -12px;
+    margin-left: auto;
+    font-size: 15px;
+    font-weight: bold;
+}
+.header .util-area .util-item {
+    position: relative;
+}
+.header .util-area .util-item > .sub-list {
+    display: none;
+}
+.header .util-area .util-item.on > .sub-list {
+    display: block;
+    background: url('https://simg.wooribank.com/img/common/etc/bg_menu_border.png') no-repeat;
+    border: 1px solid #666;
+    position: absolute;
+    left: -50px;
+    top: 30px;
+    width: 230px;
+    height: 160px;
+    background-color: #fff;
+    z-index: 2;
+    padding: 15px 20px;
+
+}
+.header .util-area .util-item.on > .sub-list .sub-item.bold {
+    font-size: 16px;
+    border-bottom: 2px solid #666;
+    margin-bottom: 15px;
+    line-height: 40px;
+}
+.header .util-area .util-item.on > .sub-list .sub-item a {
+    padding-left: 30px;
+    font-size: 12px;
+}
+.header .util-area .util-item.on > .sub-list .sub-item a.eng {
+    background: url('https://simg.wooribank.com/img/common/header/all_svc_flag_us.gif') no-repeat; 
+}
+.header .util-area .util-item.on > .sub-list .sub-item a.chn {
+    background: url('https://simg.wooribank.com/img/common/header/all_svc_flag_china.gif') no-repeat;
+}
+.header .util-area .util-item.on > .sub-list .sub-item a.jpn {
+    background: url('https://simg.wooribank.com/img/common/header/all_svc_flag_japan.gif') no-repeat;
+}
+.header .util-area .util-item.on .arrow {
+    z-index: 6;
+    display: block;
+    width: 105px;
+    height: 20px;
+    position: absolute;
+    top: 17px;
+    left: -20px;
+    background: url('https://simg.wooribank.com/img/main/arrow.png') no-repeat center;
+}
+
+.header .util-area .btn-search {
+    width: 30px;
+    height: 30px;
+    background: url("https://simg.wooribank.com/img/intro/header/upper_search_icon_new.png") no-repeat;
+}
+
+/* FOOTER */
+.footer {
+    height: 200px;
+    /* position: relative; */
+}
+.footer::before{
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    background-color: #F8F8F8;
+    border-top: 2px solid #d4d4d4;
+    border-bottom: 1px solid #d4d4d4;
+}
+.footer .inner{
+    position: relative;
+}
+.footer-top .util-list {
+    display: flex;
+    gap: 5px;
+    position: absolute;
+    top: 11px;
+    left: 75px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 35px;
+}
+
+.footer-top .util-item .sub-list {
+    display: none;
+}
+.footer-top .util-item.on .sub-list {
+    display: block;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #000;
+    position: absolute;
+    bottom: 30px;
+}
+.footer-top .util-item.on .sub-item.title {
+    font-size: 16px;
+    padding: 0;
+}
+.footer-top .util-item.on .sub-item {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+}
+.footer-top .util-item.on .sub-item::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+.footer-top .util-item.on .sub-item:first-child {
+    border-bottom: 2px solid #666;
+}
+.footer-top .util-item.on .sub-item:last-child {
+    border-bottom: none;
+}
+.footer-top .util-item.on .sub-item .left {
+    position: relative;
+    top: 10px;
+    text-align: center;
+    float: left;
+    color: #fff;
+    font-size: 11px;
+    background: #0083cd;
+    padding: 0 15px;
+}
+.footer-top .util-item.on .sub-item .left.gray {
+    color: #666;
+    background: #eee;
+}
+.footer-top .util-item.on .sub-item .right {
+    float: left;
+    margin-left: 20px;
+}
+.footer-top .util-item.on .sub-item .right p {
+    height: 25px;
+}
+.footer-top .util-item.on .sub-item .right p .text {
+    /* display: inline-block;
+    width: 40px; */
+    margin-right: 15px;
+}
+.footer-top .util-item:nth-child(1) {
+    font-weight: bold;
+}
+.footer-top .util-item .util-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 154px;
+    height: 14px;
+    background: url('https://simg.wooribank.com/img/main/icon_more.png');
+    background-repeat: no-repeat;
+    background-position: 105px 50%;
+    border-right: 1px solid #ddd;
+    padding-right: 40px;
+}
+.footer-top .util-item.on .arrow {
+    position: relative;
+    z-index: 2;
+    bottom: 20px;
+    left: 135px;
+    display: block;
+    height: 11px;
+    background: url('https://simg.wooribank.com/img/common/footer/bu_more.gif') no-repeat;
+}
+.footer-top .util-item .family-list {
+    display: none;
+}
+.footer-top .util-item.on .family-list {
+    position: absolute;
+    bottom: 35px;
+    width: 300px;
+    display: block;
+    flex-wrap: wrap;
+    background: #fff;
+    border: 1px solid #696969;
+    padding: 20px;
+}
+.footer-top .util-item.on .family-item {
+    height: 25px;
+    float: left;
+    width: 50%;
+}
+.footer-top .util-item.on .family-item a {
+    font-weight: 500;
+    font-size: 13px;
+    color: #000;
+    background: url('https://simg.wooribank.com/img/main/bu_list_black.gif');
+    background-repeat: no-repeat;
+    background-size: 2px;
+    background-position: left center;
+    padding-left: 7px;
+}
+.footer-top .util-item.on .family-list .title {
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid #666;
+    line-height: 16px;
+}
+.footer-top .util-item.on .family-arrow {
+    position: relative;
+    bottom: 25px;
+    left: 103px;
+    z-index: 2;
+    width: 13px;
+    /* 블록요소로 만든순간 width는 100%가 된다. (따로 수치가 없다면) */
+    display: block; 
+    height: 11px;
+    background: url('https://simg.wooribank.com/img/common/footer/bu_more.gif');
+    background-repeat: no-repeat;
+}
+.footer-top .sns-list {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+/* .footer-top .sns-item {}
+.footer-top .sns-item a{
+}
+.footer-top .sns-item img{} */
+
+
+.footer-bottom {
+    display: flex;
+    padding-top: 40px;
+}
+.footer-bottom .logo {
+    display: inline-block;
+    margin-top: 24px;
+    margin-left: 45px;
+    width: 96px;
+    height: 34px;
+    background: url('https://simg.wooribank.com/img/common/footer/icon_woori.gif') no-repeat;
+}
+.footer-bottom .info-area {
+    color: #7f7f7f;
+    margin-top: 15px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+}
+.footer-bottom .info-area ul {
+    display: flex;
+    flex: 1;
+}
+.footer-bottom .info-area .copy {
+    color: #7f7f7f;
+    letter-spacing: 0;
+    font-family: Arial;
+    font-size: 11px;
+    margin-top: 10px;
+}
+.footer-bottom .info-area a:hover {
+    color: #000;
+}
+
+.bar {
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    background-color: #7f7f7f;
+    margin: 0 5px;
+}
+
+.footer-bottom .mark-area {
+    position: absolute;
+    right:  65px;
+    margin-top: 33px;
+}
+.footer-bottom .mark-area ul{
+    display: flex; 
+    gap: 3px;
+}
+.footer-bottom .mark-area li{}
+.footer-bottom .mark-area a {
+    display: flex;
+}
+.footer-bottom .mark-area a:nth-child(1){
+    width: 34px;
+    height: 21px;
+}

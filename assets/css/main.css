@@ -1,0 +1,311 @@
+.sc-visual {}
+.sc-visual .swiper{}
+.sc-visual .swiper-wrapper{
+    height: 520px;
+}
+.sc-visual .swiper-slide{}
+.sc-visual .swiper-slide a{
+    display: flex;
+    justify-content: center;
+}
+.sc-visual .slide-1 a {
+    background: rgb(237, 243, 253);
+}
+.sc-visual .slide-2 a {
+    background: rgb(249, 244, 255);
+}
+.sc-visual .slide-3 a {
+    background: rgb(191, 217, 247);
+} 
+
+.sc-visual .pagination-area {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    bottom: 52px; 
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.sc-visual .pagination-area .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 142px;
+    height: 18px;
+}
+.sc-visual .pagination-area .swiper-pagination-bullet {
+    margin: 0;
+    background: #000;
+    opacity: 0.5;
+}
+.sc-visual .pagination-area .swiper-pagination-bullet-active {
+    background: #000;
+    opacity: 1;
+}
+.sc-visual .pagination-area .btn {
+    width: 30px;
+    height: 40px;
+    background: #0f0;
+    /* opacity: 0.4; */
+}
+.sc-visual .pagination-area .autoplay{
+    background: url('https://simg.wooribank.com/img/intro/home/slides_btn_play_new0919.png') no-repeat center / 10px;
+}
+.sc-visual .pagination-area .autoplay.on{
+    background: url('https://simg.wooribank.com/img/intro/home/slides_btn_pause_new0919.png') no-repeat center / 10px;
+}
+.sc-visual .pagination-area .prev {
+    opacity: 0.4;
+    background: url('https://simg.wooribank.com/img/intro/home/slides_btn_previous_new0924.png') no-repeat center / 10px;
+}
+.sc-visual .pagination-area .next {
+    opacity: 0.4;
+    background: url('https://simg.wooribank.com/img/intro/home/slides_btn_next_new0924.png') no-repeat center / 10px;
+}
+
+
+.sc-quick {
+    position: relative;
+    background: #0f0;
+}
+.sc-quick .contents {
+    position: absolute;
+    left: 50%;
+    top: -38px;
+    width: 772px;
+    transform: translateX(-50%);
+    z-index: 1;
+    /* border: 1px solid #000; */
+}
+.sc-quick .quick-list{
+    display: flex;
+    height: 76px;
+    background: #3a8dfd;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 60px;
+    overflow: hidden;
+    box-shadow: 0px 2px 10px #808080;
+}
+.sc-quick .quick-item{
+    position: relative;
+    /* 강력한 flex: 1 속성 */
+    flex: 1;
+}
+.sc-quick .quick-item a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.sc-quick .quick-item.other {
+    background: #0082cd;
+    /* flex:  flex-grow flex-shrink flex-basis */ 
+    /*? 여긴 왜 이렇게 준거지?*/
+     /* 원래 width: 170px을 줬었는데 위에 flex: 1이 더 강력한 속성이라서 먹히지 않는다. 그래서 flex-basis값을 수정해줬어야 했다. */
+    flex: 0 0 170px;
+    font-size: 20px;
+}
+.sc-quick .quick-item.quick {
+    background: #fff;
+    /*? 여긴 왜 이렇게 준거지?*/
+    flex: 0 0 170px;
+    color: #000;
+}
+.sc-quick .quick-item.quick span {
+    position: absolute;
+    left: 140px;
+    width: 12px;
+    height: 22px;
+    background: url('https://simg.wooribank.com/img/common/etc/bg_btn/btn_q_arrow20200618.png') no-repeat;
+}
+.sc-quick .sub-list {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding-top: 30px;
+    color: #7f7e7e;
+    font-weight: bold;
+}
+.sc-quick .sub-item {}
+
+.inner1 {
+    /* margin-top: 130px; */
+    padding-top: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.inner1 .list {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 15px;
+    letter-spacing: -1px;
+    color: #000;
+}
+
+/* 경계선 */
+.inner1 .finance-list::after {
+    position: absolute;
+    top: -19px;
+    right: -9px;
+    background: #e9f2ff;
+    width: 2px;
+    height: 88px;
+    content: '';
+    margin-left: 15px;
+}
+.inner1 .card-list {
+    font-weight: bold;
+}
+/* .inner1 .item.on {
+    background-color: rgb(58, 141, 253);
+    border-radius: 70%;
+    color: #fff;
+} */
+ .inner1 .item {
+    width: 85px;
+    height: 85px;
+ }
+ .inner1 .item a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 100%;
+    height: 100%;
+    padding-top: 7px;
+ }
+.inner1 .item.on a{
+    display: block;
+    background-color: rgb(58, 141, 253);
+    border-radius: 85px;
+    color: #fff;
+}
+
+.inner1 .item .img-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 85px; */
+    /* width: 100%; */
+    /* height: 85px; */
+
+}
+.inner1 .item .text-box {
+    padding-bottom: 5px;
+}
+.inner1 .item .img{
+    width: 100%;
+}
+.inner1 .item span {}
+.headline {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 32px;
+}
+.sc-finance{
+    width: 696px;
+}
+.sc-card {
+    width: 260px;
+}
+
+
+.sc-service {}
+.sc-service .headline {
+    margin-top: 60px;
+}
+.sc-service .service-list {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+.sc-service .service-item {
+    border: 1px solid #d8d8d8;
+}
+.sc-service .service-item a{}
+.sc-service .service-item .img-box{}
+.sc-service .service-item img{
+    object-fit: cover; 
+}
+.sc-service .service-item .text-box{
+    text-align: center;
+}
+.sc-service .service-item .title{
+    color: #555;
+    margin-top: 13px;
+    font-size: 19px;
+    font-weight: bold;
+}
+.sc-service .service-item .desc{
+    color: #666;
+    margin: 10px 0 9px 0;
+    font-size: 14px;
+}
+
+
+.board-container {
+    background: #f4f7fa;
+    height: 180px;
+    margin-bottom: 50px;
+}
+.board-inner {
+    display: flex;
+    margin-top: 30px;
+}
+.board-inner .board {
+    display: flex;
+    position: relative;
+    flex: 1;
+    margin-top: 35px;
+}
+.board .list {}
+.board .item {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    width: 365px;
+}
+.board .item a{
+    display: inline-block;
+    font-size: 14px;
+    color: #000;
+    line-height: 30px;
+    /* width: 350px; */
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 65px;
+}
+.board .news-item .date{
+    font-size: 12px;
+}
+.board .headline{
+    width: 82px;
+    font-size: 18px;
+}
+.board .link-more {
+    position: absolute;
+    left: 0;
+    top: 40px;
+    width: 85px;
+    height: 16px;
+    background: url('https://simg.wooribank.com/img/common/etc/bg_btn/arrow_link.png') no-repeat center / 6px;
+    font-size: 12px;
+}
+.board .item a:hover {
+    text-decoration: underline;
+    color: #0083cb;
+}
+.sc-news {
+    margin-right: 45px;
+}

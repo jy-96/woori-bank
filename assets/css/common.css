@@ -1,0 +1,44 @@
+/* 공통소스 */
+
+.skipNav{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.skipNav a{
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    background: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100%);
+}
+.skipNav a:active{}
+
+/* TAB을 눌러서 포커스 됐을 때 */
+.skipNav a:focus {
+    transform: translateY(0);
+}
+
+/* IR기법 (장애인들을 위한 기능) */
+.blind{
+	position:absolute;
+    overflow:hidden;
+    width:1px;
+    height:1px;
+    margin:-1px;
+    clip:rect(0,0,0,0);
+}
+
+
+/* 적응형 웹사이트에만 적용 */
+.wrapper {
+    min-width: 1000px;
+}
+
+.inner {
+    width: 980px;
+    margin: 0 auto;
+}

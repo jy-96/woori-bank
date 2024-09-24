@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="./assets/js/main.js" defer></script>
+</head>
+<body>
+
+    <div class="skipNav">
+        <a href="#main">본문바로가기</a>
+    </div>
+
+    <!-- wrapper의 용도는 최소width -->
+    <div class="wrapper">
+
+        <header class="header">
+            <div class="inner">
+                <h1 class="logo"><a href=""><span class="blind">우리은행로고</span></a></h1>
+                <ul class="auth-list">
+                    <li class="auth-item">
+                        <a class="btn-login">로그인</a>
+                        <ul class="sub-list">
+                            <li class="sub-item left"><a href="">개인</a></li>
+                            <li class="sub-item right"><a href="">기업</a></li>
+                        </ul>
+                    </li>
+                    <li class="auth-item">
+                        <a class="btn-auth">인증센터</a>
+                        <ul class="sub-list">
+                            <li class="sub-item left"><a href="">개인</a></li>
+                            <li class="sub-item right"><a href="">기업</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <nav class="gnb">
+                    <ul class="gnb-list">
+                        <li class="gnb-item"><a href="">개인</a></li>
+                        <li class="gnb-item"><a href="">기업</a></li>
+                        <li class="gnb-item"><a href="">마이데이터</a></li>
+                        <li class="gnb-item">
+                            <a href="">자산관리</a>
+                            <span class="arrow"></span>
+                            <ul class="sub-list">
+                                <li class="sub-item bold"><a href="">자산관리</a></li>
+                                <li class="sub-item"><a href="">MY 자산진단</a></li>
+                                <li class="sub-item"><a href="">펀드 포트폴리오</a></li>
+                                <li class="sub-item"><a href="">퇴직연금 포트폴리오</a></li>
+                                <li class="sub-item"><a href="">WOW챌린지</a></li>
+                                <li class="sub-item"><a href="">미래설계</a></li>
+                            </ul>
+                        </li>
+                        <li class="gnb-item"><a href="">금융상품</a></li>
+                        <li class="gnb-item"><a href="">카드</a></li>
+                        <li class="gnb-item"><a href="">제휴제안</a></li>
+                    </ul>
+                </nav>
+                
+
+                <ul class="util-area"> 
+                    <li class="util-item"><button class="btn-menu">전체메뉴</button></li>
+                    <li class="util-item">
+                        <button class="btn-global">GLOBAL</button>
+                        <span class="arrow"></span>
+                        <ul class="sub-list">
+                            <li class="sub-item bold">LANGUAGE</li>
+                            <li class="sub-item"><a class="eng" href="">English</a></li>
+                            <li class="sub-item"><a class="chn"  href="">Chinese (中国語)</a></li>
+                            <li class="sub-item"><a class="jpn" href="">Japanese (日本語)</a></li>
+                        </ul>
+                    </li>
+                    <li class="util-item"><button class="btn-search"><span class="blind">검색</span></button></li>
+                </ul>
+            </div>
+        </header>
+
+        <main id="main">
+            <section class="sc-visual">
+                <!-- swiperJS -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide-1">
+                            <a href=""><img src="https://www.wooribank.com/img/smart/intro/INTPOT_ALL_INTRO_ROLL6/won.png" alt=""></a>
+                        </div>
+                        <div class="swiper-slide slide-2">
+                            <a href=""><img src="https://www.wooribank.com/img/smart/intro/INTPOT_ALL_INTRO_ROLL1/iu.png" alt=""></a>
+                        </div>
+                        <div class="swiper-slide slide-3">
+                            <a href=""><img src="https://www.wooribank.com/img/smart/intro/INTPOT_ALL_INTRO_ROLL2/house.png" alt=""></a>
+                        </div>
+                    </div>
+
+                    <div class="pagination-area">
+                        <!-- .pagination은 jquery연결로 버튼 동그라미 3개 생김  -->
+                        <div class="pagination"></div>
+
+                        <!-- 백그라운드 이미지로 생성 -->
+                        <button class="btn autoplay" aria-label="자동재생버튼"></button>
+                        <button class="btn prev" aria-label="이전슬라이드"></button>
+                        <button class="btn next" aria-label="다음슬라이드"></button>
+                    </div>
+                </div>
+            </section>
+            <div class="inner">
+                <section class="sc-quick">
+                    <h2 class="blind">빠른메뉴</h2>
+
+                    <div class="contents">
+                        <ul class="quick-list">
+                            <li class="quick-item other"><a href="">다른금융<br>정보조회</a></li>
+                            <li class="quick-item"><a href="">조회</a></li>
+                            <li class="quick-item"><a href="">이체</a></li>
+                            <li class="quick-item"><a href="">환율</a></li>
+                            <li class="quick-item quick"><a href="">빠른메뉴<span></span></a></li>
+                        </ul>
+                        
+                        <ul class="sub-list">
+                            <li class="sub-item"><a href="">금융 소비자 보호</a></li>
+                            <li class="sub-item"><a href="">보안뉴스</a></li>
+                            <li class="sub-item"><a href="">상품/약관 공시</a></li>
+                        </ul>
+                    </div>
+                </section>
+                <div class="inner1">
+                    <section class="sc-finance">
+                        <h2 class="headline">금융상품</h2>
+
+                        <ul class="list finance-list">
+                            <li class="item finance-item">
+                                <a href="">
+                                    <div class="img-box">
+                                        <img src="https://www.wooribank.com/img/common/etc/bg_btn/icon_set_011.png" alt="">
+                                    </div>
+                                    <div class="text-box"><span>예금</span></div>
+                                </a>
+                            </li>
+                            <li class="item finance-item">
+                                <a href="">
+                                    <div class="img-box">
+                                        <img src="https://www.wooribank.com/img/common/etc/bg_btn/icon_set_022.png" alt="">
+                                    </div>
+                                    <div class="text-box"><span>대출</span></div>
+                                </a>
+                            </li>
+                            <li class="item finance-item">
+                                <a href="">
+                                    <div class="img-box">
+                                        <img src="https://www.wooribank.com/img/common/etc/bg_btn/icon_set_033.png" alt="">
+                                    </div>
+                                    <div class="text-box"><span>펀드</span></div>
+                                </a>
+                            </li>
+                            <li class="item finance-item">
+                                <a href="">
+                                    <div class="img-box">
+                                        <img src="https://www.wooribank.com/img/common/etc/bg_btn/icon_set_044.png" alt="">
+                                    </div>
+                                    <div class="text-box"><span>외환</span></div>
+                                </a>
+                            </li>
+                            <li class="item finance-item">
+                                <a href="">
+                                    <div class="img-box">
+                                        <img src="https://www.wooribank.com/img/common/etc/bg_btn/icon_set_055.png" alt="">
+                                    </div>
+                                    <div class="text-box"><span>신탁</span></div>
+                                </a>
+                            </li>
+                            <li class="item finance-item">
+                                <a href="">
+                                    <div class="img-box">
+                                        <img src="https://www.wooribank.com/img/common/etc/bg_btn/icon_set_066.png" alt="">
+                                    </div>
+                                    <div class="text-box"><span>퇴직연금</span></div>
+                                </a>
+                            </li>
+                            <li class="item finance-item">
+                                <a href="">
+                                    <div class="img-box">
+                                        <img src="https://www.wooribank.com/img/common/etc/bg_btn/icon_set_077.png" alt="">
+                                    </div>
+                                    <div class="text-box"><span>보험</span></div>
+                                </a>
+                            </li>
+                            <li class="item finance-item">
+                                <a href="">
+                                    <div class="img-box">
+                                        <img src="https://www.wooribank.com/img/common/etc/bg_btn/icon_set_088.png" alt="">
+                                    </div>
+                                    <div class="text-box"><span>ISA</span></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="sc-card">
+                        <h2 class="headline">카드</h2>
+
+                        <ul class="list card-list">
+                            <li class="item card-item">
+                                <a href="">
+                                    <div class="img-box">
+                                        <img src="https://www.wooribank.com/img/common/etc/bg_btn/icon_set_099.png" alt="">
+                                    </div>
+                                    <div class="text-box"><span>카드신청</span></div>
+                                </a>
+                            </li>
+                           <li class="item card-item">
+                                <a href="">
+                                    <div class="img-box">
+                                        <img src="https://www.wooribank.com/img/common/etc/bg_btn/icon_set_01010.png" alt="">
+                                    </div>
+                                    <div class="text-box"><span>나의카드</span></div>
+                                </a>
+                            </li>
+                            <li class="item card-item">
+                                <a href="">
+                                    <div class="img-box">
+                                        <img src="https://www.wooribank.com/img/common/etc/bg_btn/icon_set_01111.png" alt="">
+                                    </div>
+                                    <div class="text-box"><span>이벤트</span></div>
+                                </a>
+                            </li>
+                        </–ul>
+                    </section>
+                </div>
+                <section class="sc-service">
+                    <h2 class="headline">서비스</h2>
+                    
+                    <ul class="service-list">
+                        <li class="service-item">
+                            <a href="">
+                                <div class="img-box">
+                                    <img src="https://simg.wooribank.com/img/intro/home/image_service_04_b.png" alt="">
+                                </div>
+                                <div class="text-box">
+                                    <h3 class="title">우리WON뱅킹</h3>
+                                    <p class="desc">새 시대의 금융을 켜다,<br>우리은행 대표 모바일뱅킹 APP</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="service-item">
+                            <a href="">
+                                <div class="img-box">
+                                    <img src="https://simg.wooribank.com/img/intro/home/image_service_05_mydata.png" alt="">
+                                </div>
+                                <div class="text-box">
+                                    <h3 class="title">마이데이터</h3>
+                                    <p class="desc">나의 데이터가 가치가 되는<br>새로운 경험을 체험해 보세요</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="service-item">
+                            <a href="">
+                                <div class="img-box">
+                                    <img src="https://simg.wooribank.com/img/intro/home/image_service_02_b.png" alt="">
+                                </div>
+                                <div class="text-box">
+                                    <h3 class="title">스마트간편신규</h3>
+                                    <p class="desc">직원에게 추천받으신 상품을<br>간편하게 가입하세요</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <div class="board-container">
+                <div class="inner board-inner">
+                    <div class="board sc-news">
+                        <h2 class="headline">새소식</h2>
+                        <ul class="list news-list">
+                            <li class="item news-item">
+                                <a href="">[채용] 2023년 상반기 우리은행 신입행원 채용 최종 합격자 발표</a>
+                                <span class="date">2023.06.28</span>
+                            </li>
+                            <li class="item news-item">
+                                <a href="">[공지] 모바일 · 인터넷뱅킹 타행이체 수수료, 타행자동이체 수수료 전액 면제 안내</a>
+                                <span class="date">2023.02.08</span>
+                            </li>
+                            <li class="item news-item">
+                                <a href="">[공지] 환전주머니 환율 우대율 변경 공지</a>
+                                <span class="date">2023.07.26</span>
+                            </li>
+                        </ul>
+                        <a href="" class="link-more"><span>더보기</span></a>
+                    </div>
+                    <div class="board sc-event">
+                        <h2 class="headline">이벤트</h2>
+                        <ul class="list event-list">
+                            <li class="item event-item">
+                                <a href="">10대 첫 금융생활, 우리틴틴서비스 출시 이벤트</a>
+                            </li>
+                            <li class="item event-item">
+                                <a href="">청년을 위한 우리미래드림바우처Ⅱ</a>
+                            </li>
+                            <li class="item event-item">
+                                <a href="">직장인을 위한 특별한 혜택! 우리 직장인셀럽</a>
+                            </li>
+                        </ul>
+                        <a href="" class="link-more">더보기</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <!-- before -->
+            <div class="inner">
+                <div class="footer-top">
+                    <ul class="util-list">
+                        <li class="util-item">
+                            <a class="util-title" href="">대표 1588-5000</a>
+                            <span class="arrow"></span>
+                            <ul class="sub-list">
+                                <li class="sub-item title">ARS 사용안내</li>
+                                <li class="sub-item">
+                                    <div class="left">대표전화</div>
+                                    <div class="right">
+                                        <p class="right-top">1588-5000 / 1599-5000 / 1533-5000</p>
+                                        <p class="right-bottom">82-2-2006-5000<span>(해외)</span></p>
+                                    </div>
+                                </li>
+                                <li class="sub-item">
+                                    <div class="left gray">고객의 말씀</div>
+                                    <div class="right">
+                                        <p class="right-top">080-365-5000</p>
+                                        <p class="right-bottom">(휴대폰 02-2008-5000)</p>
+                                    </div>
+                                </li>
+                                <li class="sub-item">
+                                    <div class="left">신규상담</div>
+                                    <div class="right">
+                                        <p class="right-top"><span class="text">예적금</span>1599-8100</p>
+                                        <p class="right-bottom"><span class="text">대출</span>1599-8300</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="util-item">
+                            <a class="util-title" href="">기타서비스</a>
+                        </li>
+                        <li class="util-item">
+                            <a class="util-title" href="">LANGUAGE</a>
+                        </li>
+                        
+                        <li class="util-item">
+                            <a class="util-title" href="">패밀리사이트</a>
+                            <span class="family-arrow"></span>
+                            <ul class="family-list">
+                                <li class="family-item title">패밀리사이트</li>
+                                <li class="family-item"><a href="">우리금융지주</a></li>
+                                <li class="family-item"><a href="">우리카드</a></li>
+                                <li class="family-item"><a href="">우리금융캐피탈</a></li>
+                                <li class="family-item"><a href="">우리종합금융</a></li>
+                                <li class="family-item"><a href="">우리자산신탁</a></li>
+                                <li class="family-item"><a href="">우리금융저축은행</a></li>
+                                <li class="family-item"><a href="">우리신용정보</a></li>
+                                <li class="family-item"><a href="">우리펀드서비스</a></li>
+                                <li class="family-item"><a href="">우리PE</a></li>
+                                <li class="family-item"><a href="">우리글로벌자산금융</a></li>
+                                <li class="family-item"><a href="">우리FIS</a></li>
+                                <li class="family-item"><a href="">우리금융경영연구소</a></li>
+                                <li class="family-item"><a href="">우리다문화장학재단</a></li>
+                                <li class="family-item"><a href="">우리미소금융재단</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="sns-list">
+                        <li class="sns-item">
+                            <a href="">
+                                <img src="https://www.wooribank.com/img/common/footer/icon_facebook_gray.png" alt="">
+                            </a>
+                        </li>
+                        <li class="sns-item">
+                            <a href="">
+                                <img src="https://www.wooribank.com/img/common/footer/icon_instagram_gray.png" alt="">
+                            </a>
+                        </li>
+                        <li class="sns-item">
+                            <a href="">
+                                <img src="https://www.wooribank.com/img/common/footer/icon_post_naver_gray.png" alt="">
+                            </a>
+                        </li>
+                        <li class="sns-item">
+                            <a href="">
+                                <img src="https://www.wooribank.com/img/common/footer/icon_youtube_gray.png" alt="">
+                            </a>
+                        </li>
+                        <li class="sns-item">
+                            <a href="">
+                                <img src="https://www.wooribank.com/img/common/footer/icon_navertv_gray.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-bottom">
+                    <a href="" class="logo"><span class="blind">우리은행푸터로고</span></a>
+                    <div class="info-area">
+                        <ul>
+                            <li><a href="">은행소개<i class="bar"></i></a></li>
+                            <li><a href="">영업점안내<i class="bar"></i></a></li>
+                            <li><a href="">고객광장<i class="bar"></i></a></li>
+                            <li><a href="">개인정보처리방침<i class="bar"></i></a></li>
+                            <li><a href="">신용정보활용체제<i class="bar"></i></a></li>
+                            <li><a href="">개인신용정보관리보호</a></li>
+                        </ul>
+
+
+                        <ul>
+                            <li><a href="">사고신고<i class="bar"></i></a></li>
+                            <li><a href="">전자민원접수<i class="bar"></i></a></li>
+                            <li><a href="">보호금융상품등록부<i class="bar"></i></a></li>  
+                            <li><a href="">상품공시실<i class="bar"></i></a></li>
+                            <li><a href="">보안센터<i class="bar"></i></a></li>
+                            <li><a href="">웹접근성 이용안내</a></li>
+                        </ul>
+
+                        <p class="copy">COPYRIGHTS WOORI BANK. ALL RIGHTS RESERVED.</p>
+                    </div>
+                    <div class="mark-area">
+                        <ul>
+                            <li><a href=""><img src="https://simg.wooribank.com/img/main/icon_kwacc_ib_2023.png" alt=""></a></li>
+                            <li><a href=""><img src="https://simg.wooribank.com/img/main/icon_1_new.gif" alt=""></a></li>
+                            <li><a href=""><img src="https://simg.wooribank.com/img/main/icon_20201215.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
