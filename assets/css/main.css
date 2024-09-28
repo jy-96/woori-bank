@@ -104,14 +104,12 @@
 .sc-quick .quick-item.other {
     background: #0082cd;
     /* flex:  flex-grow flex-shrink flex-basis */ 
-    /*? 여긴 왜 이렇게 준거지?*/
      /* 원래 width: 170px을 줬었는데 위에 flex: 1이 더 강력한 속성이라서 먹히지 않는다. 그래서 flex-basis값을 수정해줬어야 했다. */
     flex: 0 0 170px;
     font-size: 20px;
 }
 .sc-quick .quick-item.quick {
     background: #fff;
-    /*? 여긴 왜 이렇게 준거지?*/
     flex: 0 0 170px;
     color: #000;
 }
